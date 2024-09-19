@@ -26,3 +26,34 @@ Al final:
 ```
 fc-cache -fv
 ```
+
+## ZSH, OH-MY-ZSH, Powerlevel 10k
+
+Instalar:
+```
+sudo apt-get install  zsh
+```
+
+Luego
+
+```
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh
+```
+
+Para P10K:
+
+```
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+```
+
+En /home/diegojoel301/.zshrc cambiar ZSH_THEME por:
+
+```
+ZSH_THEME="powerlevel10k/powerlevel10k"
+```
+
+Al final:
+
+```
+p10k configure
+```
